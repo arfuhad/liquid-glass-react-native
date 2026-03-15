@@ -1,0 +1,98 @@
+{
+  "name": "liquid-glass-react-native",
+  "version": "0.1.0",
+  "description": "Cross-platform liquid glass effect for React Native (iOS & Android) using WebView-based SVG filter pipeline",
+  "author": "arfuhad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arfuhad/liquid-glass-react-native.git"
+  },
+  "homepage": "https://github.com/arfuhad/liquid-glass-react-native",
+  "bugs": {
+    "url": "https://github.com/arfuhad/liquid-glass-react-native/issues"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "liquid-glass",
+    "glassmorphism",
+    "blur",
+    "glass-effect",
+    "ios",
+    "android",
+    "webview",
+    "svg-filter",
+    "apple",
+    "ui",
+    "backdrop-blur",
+    "refraction",
+    "displacement-map"
+  ],
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/module/index.js",
+      "require": "./lib/commonjs/index.js",
+      "types": "./lib/typescript/src/index.d.ts"
+    }
+  },
+  "files": [
+    "lib",
+    "src",
+    "README.md",
+    "LICENSE",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.72.0",
+    "react-native-webview": ">=13.0.0",
+    "react-native-view-shot": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native-view-shot": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build": "bob build",
+    "clean": "rm -rf lib",
+    "typecheck": "tsc --noEmit",
+    "prepare": "bob build",
+    "prepublishOnly": "npm run clean && npm run build",
+    "release": "npm publish"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "react-native-builder-bob": "^0.30.0",
+    "react-native-webview": "^13.0.0",
+    "typescript": "^5.3.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
