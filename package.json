@@ -1,6 +1,6 @@
 {
   "name": "liquid-glass-react-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cross-platform liquid glass effect for React Native (iOS & Android) using WebView-based SVG filter pipeline",
   "author": "arfuhad",
   "license": "MIT",
