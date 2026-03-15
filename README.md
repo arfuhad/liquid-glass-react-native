@@ -1,16 +1,16 @@
-# liquid-glass-react-native
+# react-native-liquid-glass-view
 
 Cross-platform liquid glass effect for React Native. Brings Apple's liquid glass aesthetic to **both iOS and Android** using a WebView-based SVG filter pipeline.
 
-[![npm version](https://img.shields.io/npm/v/liquid-glass-react-native.svg)](https://www.npmjs.com/package/liquid-glass-react-native)
-[![license](https://img.shields.io/npm/l/liquid-glass-react-native.svg)](https://github.com/arfuhad/liquid-glass-react-native/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-native-liquid-glass-view.svg)](https://www.npmjs.com/package/react-native-liquid-glass-view)
+[![license](https://img.shields.io/npm/l/react-native-liquid-glass-view.svg)](https://github.com/arfuhad/react-native-liquid-glass-view/blob/main/LICENSE)
 ![platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-brightgreen)
 
 ## Preview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/arfuhad/liquid-glass-react-native/main/ios-gif.gif" alt="iOS Demo" width="300" />
-  <img src="https://raw.githubusercontent.com/arfuhad/liquid-glass-react-native/main/android-gif.gif" alt="Android Demo" width="300" />
+  <img src="https://raw.githubusercontent.com/arfuhad/react-native-liquid-glass-view/main/ios-gif.gif" alt="iOS Demo" width="300" />
+  <img src="https://raw.githubusercontent.com/arfuhad/react-native-liquid-glass-view/main/android-gif.gif" alt="Android Demo" width="300" />
 </p>
 
 > See the full [example app](./example/App.tsx) for interactive demos of all features.
@@ -30,7 +30,7 @@ Cross-platform liquid glass effect for React Native. Brings Apple's liquid glass
 ## Installation
 
 ```bash
-npm install liquid-glass-react-native
+npm install react-native-liquid-glass-view
 ```
 
 ### Peer dependencies
@@ -64,7 +64,7 @@ npm install react-native-view-shot
 ## Quick Start
 
 ```tsx
-import { LiquidGlassView } from 'liquid-glass-react-native';
+import { LiquidGlassView } from 'react-native-liquid-glass-view';
 
 function MyScreen() {
   return (
@@ -129,7 +129,7 @@ To refract native RN content through the glass, provide a `backgroundRef` pointi
 ```tsx
 import { useRef } from 'react';
 import { View, Image } from 'react-native';
-import { LiquidGlassView } from 'liquid-glass-react-native';
+import { LiquidGlassView } from 'react-native-liquid-glass-view';
 
 function RefractionExample() {
   const backgroundRef = useRef<View>(null);
@@ -166,7 +166,7 @@ When several `LiquidGlassView` instances share the same `backgroundRef`, each au
 ```tsx
 import { useRef } from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
-import { LiquidGlassView } from 'liquid-glass-react-native';
+import { LiquidGlassView } from 'react-native-liquid-glass-view';
 
 function MultiGlassExample() {
   const backgroundRef = useRef<View>(null);
@@ -209,7 +209,7 @@ Use a ref to manually trigger captures in `manual` mode:
 
 ```tsx
 import { useRef } from 'react';
-import { LiquidGlassView, type LiquidGlassViewRef } from 'liquid-glass-react-native';
+import { LiquidGlassView, type LiquidGlassViewRef } from 'react-native-liquid-glass-view';
 
 function ManualCapture() {
   const glassRef = useRef<LiquidGlassViewRef>(null);
@@ -236,7 +236,7 @@ The `usePerformanceMonitor` hook consumes FPS data from the WebView and provides
 ### Auto mode
 
 ```tsx
-import { LiquidGlassView, usePerformanceMonitor } from 'liquid-glass-react-native';
+import { LiquidGlassView, usePerformanceMonitor } from 'react-native-liquid-glass-view';
 
 function AdaptiveGlass() {
   const { adjustedProps, handlePerformanceReport } = usePerformanceMonitor({ mode: 'auto' });
@@ -357,7 +357,7 @@ This error from `react-native-view-shot` means the view hasn't mounted yet or ha
 
 ```ts
 // Component
-export { LiquidGlassView } from 'liquid-glass-react-native';
+export { LiquidGlassView } from 'react-native-liquid-glass-view';
 
 // Types
 export type {
@@ -366,20 +366,20 @@ export type {
   DisplacementMode,
   RendererType,
   CaptureMode,
-} from 'liquid-glass-react-native';
+} from 'react-native-liquid-glass-view';
 
 // Utilities
-export { isNativeLiquidGlassAvailable } from 'liquid-glass-react-native';
+export { isNativeLiquidGlassAvailable } from 'react-native-liquid-glass-view';
 
 // Performance monitoring
-export { usePerformanceMonitor, QUALITY_PRESETS } from 'liquid-glass-react-native';
+export { usePerformanceMonitor, QUALITY_PRESETS } from 'react-native-liquid-glass-view';
 export type {
   PerformanceTier,
   AdaptiveMode,
   PerformanceAdjustedProps,
   PerformanceMonitorConfig,
   PerformanceMonitorResult,
-} from 'liquid-glass-react-native';
+} from 'react-native-liquid-glass-view';
 ```
 
 ## Example App

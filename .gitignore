@@ -3,3 +3,4 @@ lib/
 .claude
 .DS_Store
 *.tgz
+CLAUDE.md

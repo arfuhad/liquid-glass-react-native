@@ -1,16 +1,16 @@
 {
-  "name": "liquid-glass-react-native",
-  "version": "0.1.1",
+  "name": "react-native-liquid-glass-view",
+  "version": "0.1.0",
   "description": "Cross-platform liquid glass effect for React Native (iOS & Android) using WebView-based SVG filter pipeline",
   "author": "arfuhad",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arfuhad/liquid-glass-react-native.git"
+    "url": "git+https://github.com/arfuhad/react-native-liquid-glass-view.git"
   },
-  "homepage": "https://github.com/arfuhad/liquid-glass-react-native",
+  "homepage": "https://github.com/arfuhad/react-native-liquid-glass-view",
   "bugs": {
-    "url": "https://github.com/arfuhad/liquid-glass-react-native/issues"
+    "url": "https://github.com/arfuhad/react-native-liquid-glass-view/issues"
   },
   "keywords": [
     "react-component",

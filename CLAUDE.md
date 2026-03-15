@@ -1,4 +1,4 @@
-# liquid-glass-react-native
+# react-native-liquid-glass-view
 
 ## Package Identity
 

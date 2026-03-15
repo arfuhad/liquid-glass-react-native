@@ -15,7 +15,7 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "liquid-glass-react-native": ["./src/index"]
+      "react-native-liquid-glass-view": ["./src/index"]
     }
   },
   "include": ["src/**/*"],
