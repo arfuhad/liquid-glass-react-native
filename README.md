@@ -8,10 +8,10 @@ Cross-platform liquid glass effect for React Native. Brings Apple's liquid glass
 
 ## Preview
 
-<!-- Add a GIF or screenshot showcasing the liquid glass effect -->
-<!-- Record the example app on both iOS and Android simulators -->
-
-> To see the effect in action, run the [example app](#example-app).
+<p align="center">
+  <img src="./ios-gif.gif" alt="iOS Demo" width="300" />
+  <img src="./android-gif.gif" alt="Android Demo" width="300" />
+</p>
 
 ## Features
 
