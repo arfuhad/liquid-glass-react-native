@@ -1,5 +1,5 @@
 /**
- * react-native-liquid-glass-view
+ * expo-rn-liquid-glass-view
  *
  * Cross-platform liquid glass effect for React Native.
  * Uses WebView-based SVG filter pipeline for iOS & Android support.

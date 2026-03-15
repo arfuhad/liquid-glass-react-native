@@ -17,7 +17,7 @@ import {
   type DisplacementMode,
   type CaptureMode,
   type PerformanceTier,
-} from 'react-native-liquid-glass-view';
+} from 'expo-rn-liquid-glass-view';
 
 // ── Color Palette ──
 
